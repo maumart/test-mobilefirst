@@ -1,0 +1,126 @@
+Microsoft Windows [Version 6.2.9200]
+(c) 2012 Microsoft Corporation. Alle Rechte vorbehalten.
+
+C:\Windows\system32>cd..
+
+C:\Windows>cd..
+
+C:\>cd xampp
+
+C:\xampp>cd htdocs
+
+C:\xampp\htdocs>ls
+Der Befehl "ls" ist entweder falsch geschrieben oder
+konnte nicht gefunden werden.
+
+C:\xampp\htdocs>dir
+ Datentr„ger in Laufwerk C: ist SSD
+ Volumeseriennummer: 4E07-D685
+
+ Verzeichnis von C:\xampp\htdocs
+
+12.07.2013  17:36    <DIR>          .
+12.07.2013  17:36    <DIR>          ..
+16.04.2012  17:30             2.326 apache_pb.gif
+16.04.2012  17:30             1.385 apache_pb.png
+16.04.2012  17:30             2.414 apache_pb2.gif
+16.04.2012  17:30             1.463 apache_pb2.png
+16.04.2012  17:30             2.160 apache_pb2_ani.gif
+09.06.2013  23:42    <DIR>          backbone
+26.03.2013  22:21    <DIR>          bootstrap
+16.06.2013  11:29    <DIR>          drupal
+16.04.2012  17:30             7.782 favicon.ico
+16.02.2013  03:53    <DIR>          forbidden
+16.04.2012  17:30               202 index.html
+16.04.2012  17:30               267 index.php
+19.02.2013  01:35    <DIR>          pf
+29.06.2013  23:45    <DIR>          pf2k
+09.06.2013  19:37    <DIR>          responsivepanel
+16.02.2013  03:53    <DIR>          restricted
+12.07.2013  19:19    <DIR>          saperionRWD
+12.07.2013  17:36    <DIR>          temp
+16.02.2013  03:55    <DIR>          xampp
+               8 Datei(en),         17.999 Bytes
+              13 Verzeichnis(se), 19.737.157.632 Bytes frei
+
+C:\xampp\htdocs>dir /p
+ Datentr„ger in Laufwerk C: ist SSD
+ Volumeseriennummer: 4E07-D685
+
+ Verzeichnis von C:\xampp\htdocs
+
+12.07.2013  17:36    <DIR>          .
+12.07.2013  17:36    <DIR>          ..
+16.04.2012  17:30             2.326 apache_pb.gif
+16.04.2012  17:30             1.385 apache_pb.png
+16.04.2012  17:30             2.414 apache_pb2.gif
+16.04.2012  17:30             1.463 apache_pb2.png
+16.04.2012  17:30             2.160 apache_pb2_ani.gif
+09.06.2013  23:42    <DIR>          backbone
+26.03.2013  22:21    <DIR>          bootstrap
+16.06.2013  11:29    <DIR>          drupal
+16.04.2012  17:30             7.782 favicon.ico
+16.02.2013  03:53    <DIR>          forbidden
+16.04.2012  17:30               202 index.html
+16.04.2012  17:30               267 index.php
+19.02.2013  01:35    <DIR>          pf
+29.06.2013  23:45    <DIR>          pf2k
+09.06.2013  19:37    <DIR>          responsivepanel
+16.02.2013  03:53    <DIR>          restricted
+12.07.2013  19:19    <DIR>          saperionRWD
+12.07.2013  17:36    <DIR>          temp
+16.02.2013  03:55    <DIR>          xampp
+               8 Datei(en),         17.999 Bytes
+              13 Verzeichnis(se), 19.735.912.448 Bytes frei
+
+C:\xampp\htdocs>dir -p
+ Datentr„ger in Laufwerk C: ist SSD
+ Volumeseriennummer: 4E07-D685
+
+ Verzeichnis von C:\xampp\htdocs
+
+Datei nicht gefunden
+
+C:\xampp\htdocs>dir p
+ Datentr„ger in Laufwerk C: ist SSD
+ Volumeseriennummer: 4E07-D685
+
+ Verzeichnis von C:\xampp\htdocs
+
+Datei nicht gefunden
+
+C:\xampp\htdocs>dir
+ Datentr„ger in Laufwerk C: ist SSD
+ Volumeseriennummer: 4E07-D685
+
+ Verzeichnis von C:\xampp\htdocs
+
+12.07.2013  17:36    <DIR>          .
+12.07.2013  17:36    <DIR>          ..
+16.04.2012  17:30             2.326 apache_pb.gif
+16.04.2012  17:30             1.385 apache_pb.png
+16.04.2012  17:30             2.414 apache_pb2.gif
+16.04.2012  17:30             1.463 apache_pb2.png
+16.04.2012  17:30             2.160 apache_pb2_ani.gif
+09.06.2013  23:42    <DIR>          backbone
+26.03.2013  22:21    <DIR>          bootstrap
+16.06.2013  11:29    <DIR>          drupal
+16.04.2012  17:30             7.782 favicon.ico
+16.02.2013  03:53    <DIR>          forbidden
+16.04.2012  17:30               202 index.html
+16.04.2012  17:30               267 index.php
+19.02.2013  01:35    <DIR>          pf
+29.06.2013  23:45    <DIR>          pf2k
+09.06.2013  19:37    <DIR>          responsivepanel
+16.02.2013  03:53    <DIR>          restricted
+12.07.2013  19:19    <DIR>          saperionRWD
+12.07.2013  17:36    <DIR>          temp
+16.02.2013  03:55    <DIR>          xampp
+               8 Datei(en),         17.999 Bytes
+              13 Verzeichnis(se), 19.735.912.448 Bytes frei
+
+C:\xampp\htdocs>cd saperionRWD
+
+C:\xampp\htdocs\saperionRWD>compass watch
+>>> Compass is polling for changes. Press Ctrl-C to Stop.
+>>> Change detected at 19:38:17 to: screen.scss

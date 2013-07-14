@@ -4,14 +4,32 @@
 @import "normalize";
 @import "main";
 
+@mixin bg(){
+	background-color:#556;
+	background-image: linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445),
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), 
+	linear-gradient(60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+	background-size:80px 140px;
+	background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+}
+
 /* My Styles */
+
+html {	
+	//@include bg();	
+	//background: #fff url(http://www.saperion.com/fileadmin/default/templates/images/background.jpg) repeat 0 0;
+	background: black;
+}
+
 body {
-	background: gray;
-	min-width: 300px;	
+	//background: #fff url(http://www.saperion.com/fileadmin/default/templates/images/background.jpg) repeat 0 0;
+	background: #ff00ff;
 }
 
 nav {}
-
 
 /* Grid */
 
@@ -46,6 +64,10 @@ nav {}
 	padding-left: 0;
 }
 
+.no-vspace {
+	margin: 0;
+}
+
 /* Wrap */
 
 .page-wrap {
@@ -56,6 +78,7 @@ nav {}
 .content-wrap{
 	position: relative;
 	right: 0px;
+	background: #fff;
 
 	-webkit-backface-visibility: hidden;
 	
@@ -90,8 +113,7 @@ $offcanvas-width: 50%;
 	height: 100%;
 }
 
-.main-menu-toggle {
-	
+.main-menu-toggle {	
 	color: black;
 	background: lime;	
 
@@ -105,16 +127,14 @@ $offcanvas-width: 50%;
 	}
 }
 
-.language-toggle {
-	
+.language-toggle {	
 	color: black;
 	background: lightblue;	
 	
 	&>a {
 		display: block;
 	
-		&:afte
-		r {
+		&:after {
 			padding-left: 0.25em;
 			content: '\2261'; // Icon 3 Striche		
 		}
@@ -139,7 +159,6 @@ $offcanvas-width: 50%;
 	left: -$offcanvas-width;
 }
 
-
 /* Media Query Menu */
 
 @media screen and (min-width: 640px) {
@@ -155,20 +174,99 @@ $offcanvas-width: 50%;
 		position: static;
 		width: 100%;
 		
-		& ul {
+		// First Level
+		& .nav-main-menu-first-level {
 			text-align: center;
-
+			padding: 0;
 		}
 
-		& li {
-			display: inline-block;			
+		& .nav-main-menu-first-level > li {
+			display: inline-block;
+			position: relative;	
+			padding-right: 3em;
 		}
 
-		& li + li {
-			padding-left: 2em;
+		& .nav-main-menu-first-level > li:last-child  {
+			padding-right: 0;
+		}
+
+		// Second Level
+		& .nav-main-menu-second-level {
+			display: none;
+			position: absolute;
+			top: 1.4em;
+			left: 0;
+			background: red;
+		}
+
+		& .nav-main-menu-first-level > li:hover .nav-main-menu-second-level  {
+			display: block;
+
+		}
+	}	
+
+}
+
+/* Logo */
+
+.logo {
+	background: #ff00ff url(http://www.saperion.com/fileadmin/default/templates/images/saperion_logo_de.png) no-repeat center center;	
+    height: 4.25em;
+    //margin: 0.5em 0;
+    border-top: 0.5em solid #ff00ff; // Fake Workaround
+    border-bottom: 0.5em solid #ff00ff; // Fake Workaround
+}
+
+/* Nav General */
+
+.nav-general {
+	background: yellow;
+
+	& ul {
+			text-align: center;
+		}
+
+	& li {
+		display: inline-block;	
+		padding-right: 0.5em;
+	}
+
+	& li + li {
+		padding-left: 0.5em;
+		border-left: 2px solid green;
+	}
+
+	& li:last-child{
+		padding-right: 0; // IE 8 Fix needed
+	}
+}
+
+	
+@media screen and (min-width: 640px) {
+	.logo {
+		width: 30%;
+		float: left;
+		background-position: left center;
+	}
+
+	.nav-general {
+		width: 70%;
+		float: right;
+
+		& ul {
+			text-align: right;
 		}
 	}
 
 
 }
- 
+
+:target {
+  // background: blue;
+}
+
+/* Main Content */
+
+.content-main {
+	padding: 0 1em;
+}
