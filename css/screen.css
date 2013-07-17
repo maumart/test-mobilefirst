@@ -1074,7 +1074,7 @@ body {
   }
 }
 @media screen and (min-width: 60em) {
-  /* line 250, ../sass/screen.scss */
+  /* line 249, ../sass/screen.scss */
   .nav-language {
     width: 20%;
     text-align: right;
@@ -1083,18 +1083,18 @@ body {
     top: 1.3em;
   }
 
-  /* line 258, ../sass/screen.scss */
+  /* line 257, ../sass/screen.scss */
   .top-header:hover + .nav-language {
     display: block;
   }
 
-  /* line 261, ../sass/screen.scss */
+  /* line 260, ../sass/screen.scss */
   .nav-language:hover {
     display: block;
   }
 }
 /* Logo */
-/* line 269, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .logo {
   background: magenta url(http://www.saperion.com/fileadmin/default/templates/images/saperion_logo_de.png) no-repeat center center;
   height: 4.25em;
@@ -1103,66 +1103,66 @@ body {
 }
 
 /* Nav General */
-/* line 279, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .nav-general {
   background: yellow;
 }
-/* line 282, ../sass/screen.scss */
+/* line 281, ../sass/screen.scss */
 .nav-general ul {
   text-align: center;
 }
-/* line 286, ../sass/screen.scss */
+/* line 285, ../sass/screen.scss */
 .nav-general li {
   display: inline-block;
   padding-right: 0.5em;
 }
-/* line 291, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 .nav-general li + li {
   padding-left: 0.5em;
   border-left: 2px solid green;
 }
-/* line 296, ../sass/screen.scss */
+/* line 295, ../sass/screen.scss */
 .nav-general li:last-child {
   padding-right: 0;
 }
 
 @media screen and (min-width: 40em) {
-  /* line 303, ../sass/screen.scss */
+  /* line 302, ../sass/screen.scss */
   .logo {
     width: 30%;
     float: left;
     background-position: left center;
   }
 
-  /* line 309, ../sass/screen.scss */
+  /* line 308, ../sass/screen.scss */
   .nav-general {
     width: 70%;
     float: right;
   }
-  /* line 313, ../sass/screen.scss */
+  /* line 312, ../sass/screen.scss */
   .nav-general ul {
     text-align: right;
   }
 }
-/* line 321, ../sass/screen.scss */
+/* line 320, ../sass/screen.scss */
 :target {
   background: blue;
 }
 
 /* Main Content */
-/* line 327, ../sass/screen.scss */
+/* line 326, ../sass/screen.scss */
 #content-container {
   position: relative;
 }
 
 @media screen and (min-width: 40em) {
-  /* line 334, ../sass/screen.scss */
+  /* line 333, ../sass/screen.scss */
   .content-main {
     width: 62.5%;
     float: left;
   }
 
-  /* line 339, ../sass/screen.scss */
+  /* line 338, ../sass/screen.scss */
   .content-aside {
     background: #c3c3c3;
     width: 37.5%;
@@ -1175,32 +1175,32 @@ body {
     height: 100%;
   }
 
-  /* line 353, ../sass/screen.scss */
+  /* line 352, ../sass/screen.scss */
   .content-footer {
     clear: both;
     background: red;
   }
 }
-/* line 362, ../sass/screen.scss */
+/* line 361, ../sass/screen.scss */
 .content-footer li, .nav-shortcuts li, .nav-footer li {
   padding: 0 1em;
 }
-/* line 366, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 .content-footer li + li, .nav-shortcuts li + li, .nav-footer li + li {
   border-left: 1px solid black;
 }
 
-/* line 371, ../sass/screen.scss */
+/* line 370, ../sass/screen.scss */
 .content-footer {
   background: red;
 }
 
-/* line 375, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .nav-shortcuts {
   background: #bada55;
 }
 
-/* line 379, ../sass/screen.scss */
+/* line 378, ../sass/screen.scss */
 .nav-footer {
   background: #c0ffee;
 }

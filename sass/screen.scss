@@ -241,12 +241,11 @@ $offcanvas-width: 50%;
 		& .nav-main-menu-first-level > li:hover .nav-main-menu-second-level  {
 			display: block;
 		}
-
 	}	
 
 }
 
-@media screen and (min-width: 60em) { // 960 / 16
+@media screen and (min-width: 60em) { // 960 / 16 s
 	.nav-language {		
 		width: 20%;	
 		text-align: right;	
