@@ -68,12 +68,31 @@ nav {}
 	margin: 0;
 }
 
+.inline > li {
+	display: inline;
+}
+
+.center  {
+	text-align: center;
+}
+
 /* Wrap */
 
 .page-wrap {
 	position: relative;
 	overflow: hidden;
 }
+
+@media screen and (min-width: 60em) { // 960 / 16
+	.page-wrap {
+		position: static;
+		overflow: auto;
+		margin: 0 auto;
+		width: 95%;
+		max-width: 1040px;
+	}
+}
+
 
 .content-wrap{
 	position: relative;
@@ -98,6 +117,15 @@ $offcanvas-width: 50%;
 	-webkit-transform: translate3d(-$offcanvas-width, 0px, 0px) scale3d(1, 1, 1);
 	-moz-transform: translate3d(-$offcanvas-width, 0px, 0px) scale3d(1, 1, 1);
 	transform: translate3d(-$offcanvas-width, 0px, 0px) scale3d(1, 1, 1);
+}
+
+@media screen and (min-width: 60em) { // 960 / 16
+	.content-wrap.toggled-right {
+		-webkit-transform: translate3d(0, 0px, 0px) scale3d(1, 1, 1);
+		-moz-transform: translate3d(p0, 0px, 0px) scale3d(1, 1, 1);
+		transform: translate3d(0, 0px, 0px) scale3d(1, 1, 1);
+	}
+
 }
 
 .content-wrap.toggled-left {
@@ -161,13 +189,13 @@ $offcanvas-width: 50%;
 
 /* Media Query Menu */
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 40em) { // 640 / 16
 	.main-menu-toggle {
 		display: none;
 	}
 
 	.language-toggle {
-		width: 100%;
+		width: 100%;		
 	}
 
 	.nav-main-menu {
@@ -201,9 +229,27 @@ $offcanvas-width: 50%;
 
 		& .nav-main-menu-first-level > li:hover .nav-main-menu-second-level  {
 			display: block;
-
 		}
+
 	}	
+
+}
+
+@media screen and (min-width: 60em) { // 960 / 16
+	.nav-language {		
+		width: 20%;	
+		text-align: right;	
+		display: none;
+		right: 0;
+		top: 1.3em;
+	}
+
+	.top-header:hover + .nav-language {
+		display: block;
+	}
+	.nav-language:hover {
+		display: block;
+	}
 
 }
 
@@ -242,7 +288,7 @@ $offcanvas-width: 50%;
 }
 
 	
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 40em) { // 640 / 16
 	.logo {
 		width: 30%;
 		float: left;
@@ -262,11 +308,63 @@ $offcanvas-width: 50%;
 }
 
 :target {
-  // background: blue;
+  background: blue;
 }
 
 /* Main Content */
 
-.content-main {
-	padding: 0 1em;
+#content-container {
+	//padding: 0 1em;
+	position: relative;
+}
+
+@media screen and (min-width: 40em) { // 960 / 16
+
+	.content-main {
+		width: 62.5%;
+		float: left;
+	}
+
+	.content-aside {
+		background: #c3c3c3;
+		width: 37.5%;
+		float: left;
+		
+		padding:2.5em;
+		-moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        position: absolute;
+		right: 0;
+		height: 100%;
+	}
+
+	.content-footer {
+		clear: both;
+		background: red;
+	}
+}
+
+
+.content-footer, .nav-shortcuts, .nav-footer {	
+	
+	& li {
+		padding: 0 1em;
+	}
+
+	& li + li {
+		border-left: 1px solid black;
+	}
+}
+
+.content-footer {
+	background: red;
+}
+
+.nav-shortcuts {
+	background: #bada55;
+}
+
+.nav-footer {
+	background: #c0ffee;	
 }
