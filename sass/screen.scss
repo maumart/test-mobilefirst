@@ -95,8 +95,7 @@ nav {}
 
 
 .content-wrap{
-	position: relative;
-	right: 0px;
+	position: relative;	
 	background: #fff;
 
 	-webkit-backface-visibility: hidden;
@@ -117,6 +116,11 @@ $offcanvas-width: 50%;
 	-webkit-transform: translate3d(-$offcanvas-width, 0px, 0px) scale3d(1, 1, 1);
 	-moz-transform: translate3d(-$offcanvas-width, 0px, 0px) scale3d(1, 1, 1);
 	transform: translate3d(-$offcanvas-width, 0px, 0px) scale3d(1, 1, 1);
+
+	 & .nav-offcanvas {
+	 	width: $offcanvas-width;
+	 	display: block;
+	 }
 }
 
 @media screen and (min-width: 60em) { // 960 / 16
@@ -125,13 +129,17 @@ $offcanvas-width: 50%;
 		-moz-transform: translate3d(p0, 0px, 0px) scale3d(1, 1, 1);
 		transform: translate3d(0, 0px, 0px) scale3d(1, 1, 1);
 	}
-
 }
 
 .content-wrap.toggled-left {
 	-webkit-transform: translate3d($offcanvas-width, 0px, 0px) scale3d(1, 1, 1);
 	-moz-transform: translate3d($offcanvas-width, 0px, 0px) scale3d(1, 1, 1);
 	transform: translate3d($offcanvas-width, 0px, 0px) scale3d(1, 1, 1);
+
+	 & .nav-offcanvas {
+	 	width: $offcanvas-width;
+	 	display: block;
+	 }
 }
 
 // Toggles
@@ -174,7 +182,8 @@ $offcanvas-width: 50%;
 .nav-offcanvas {
 	position: absolute;
 	top: 0;
-	width: $offcanvas-width;
+	width: 0;
+	display: none;
 }
 
 .nav-language {	
