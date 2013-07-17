@@ -1042,37 +1042,39 @@ body {
   .nav-main-menu {
     position: static;
     width: 100%;
+    display: block;
   }
-  /* line 215, ../sass/screen.scss */
+  /* line 216, ../sass/screen.scss */
   .nav-main-menu .nav-main-menu-first-level {
     text-align: center;
     padding: 0;
   }
-  /* line 220, ../sass/screen.scss */
+  /* line 221, ../sass/screen.scss */
   .nav-main-menu .nav-main-menu-first-level > li {
     display: inline-block;
     position: relative;
     padding-right: 3em;
   }
-  /* line 226, ../sass/screen.scss */
+  /* line 227, ../sass/screen.scss */
   .nav-main-menu .nav-main-menu-first-level > li:last-child {
     padding-right: 0;
   }
-  /* line 231, ../sass/screen.scss */
+  /* line 232, ../sass/screen.scss */
   .nav-main-menu .nav-main-menu-second-level {
     display: none;
     position: absolute;
     top: 1.4em;
     left: 0;
     background: red;
+    z-index: 10;
   }
-  /* line 239, ../sass/screen.scss */
+  /* line 241, ../sass/screen.scss */
   .nav-main-menu .nav-main-menu-first-level > li:hover .nav-main-menu-second-level {
     display: block;
   }
 }
 @media screen and (min-width: 60em) {
-  /* line 248, ../sass/screen.scss */
+  /* line 250, ../sass/screen.scss */
   .nav-language {
     width: 20%;
     text-align: right;
@@ -1081,18 +1083,18 @@ body {
     top: 1.3em;
   }
 
-  /* line 256, ../sass/screen.scss */
+  /* line 258, ../sass/screen.scss */
   .top-header:hover + .nav-language {
     display: block;
   }
 
-  /* line 259, ../sass/screen.scss */
+  /* line 261, ../sass/screen.scss */
   .nav-language:hover {
     display: block;
   }
 }
 /* Logo */
-/* line 267, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .logo {
   background: magenta url(http://www.saperion.com/fileadmin/default/templates/images/saperion_logo_de.png) no-repeat center center;
   height: 4.25em;
@@ -1101,66 +1103,66 @@ body {
 }
 
 /* Nav General */
-/* line 277, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .nav-general {
   background: yellow;
 }
-/* line 280, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
 .nav-general ul {
   text-align: center;
 }
-/* line 284, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .nav-general li {
   display: inline-block;
   padding-right: 0.5em;
 }
-/* line 289, ../sass/screen.scss */
+/* line 291, ../sass/screen.scss */
 .nav-general li + li {
   padding-left: 0.5em;
   border-left: 2px solid green;
 }
-/* line 294, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .nav-general li:last-child {
   padding-right: 0;
 }
 
 @media screen and (min-width: 40em) {
-  /* line 301, ../sass/screen.scss */
+  /* line 303, ../sass/screen.scss */
   .logo {
     width: 30%;
     float: left;
     background-position: left center;
   }
 
-  /* line 307, ../sass/screen.scss */
+  /* line 309, ../sass/screen.scss */
   .nav-general {
     width: 70%;
     float: right;
   }
-  /* line 311, ../sass/screen.scss */
+  /* line 313, ../sass/screen.scss */
   .nav-general ul {
     text-align: right;
   }
 }
-/* line 319, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
 :target {
   background: blue;
 }
 
 /* Main Content */
-/* line 325, ../sass/screen.scss */
+/* line 327, ../sass/screen.scss */
 #content-container {
   position: relative;
 }
 
 @media screen and (min-width: 40em) {
-  /* line 332, ../sass/screen.scss */
+  /* line 334, ../sass/screen.scss */
   .content-main {
     width: 62.5%;
     float: left;
   }
 
-  /* line 337, ../sass/screen.scss */
+  /* line 339, ../sass/screen.scss */
   .content-aside {
     background: #c3c3c3;
     width: 37.5%;
@@ -1173,32 +1175,32 @@ body {
     height: 100%;
   }
 
-  /* line 351, ../sass/screen.scss */
+  /* line 353, ../sass/screen.scss */
   .content-footer {
     clear: both;
     background: red;
   }
 }
-/* line 360, ../sass/screen.scss */
+/* line 362, ../sass/screen.scss */
 .content-footer li, .nav-shortcuts li, .nav-footer li {
   padding: 0 1em;
 }
-/* line 364, ../sass/screen.scss */
+/* line 366, ../sass/screen.scss */
 .content-footer li + li, .nav-shortcuts li + li, .nav-footer li + li {
   border-left: 1px solid black;
 }
 
-/* line 369, ../sass/screen.scss */
+/* line 371, ../sass/screen.scss */
 .content-footer {
   background: red;
 }
 
-/* line 373, ../sass/screen.scss */
+/* line 375, ../sass/screen.scss */
 .nav-shortcuts {
   background: #bada55;
 }
 
-/* line 377, ../sass/screen.scss */
+/* line 379, ../sass/screen.scss */
 .nav-footer {
   background: #c0ffee;
 }

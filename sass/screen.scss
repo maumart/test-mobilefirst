@@ -210,6 +210,7 @@ $offcanvas-width: 50%;
 	.nav-main-menu {
 		position: static;
 		width: 100%;
+		display: block;
 		
 		// First Level
 		& .nav-main-menu-first-level {
@@ -234,6 +235,7 @@ $offcanvas-width: 50%;
 			top: 1.4em;
 			left: 0;
 			background: red;
+			z-index: 10;
 		}
 
 		& .nav-main-menu-first-level > li:hover .nav-main-menu-second-level  {
